@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Captcha Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Captcha Generator</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="captcha-input">Enter the Captcha:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="captcha-input" placeholder="Enter Captcha">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" onclick="generateCaptcha()">Refresh</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div id="captcha-container" class="captcha-container"></div>
+            </div>
+            <button class="btn btn-success" onclick="validateCaptcha()">Verify</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
